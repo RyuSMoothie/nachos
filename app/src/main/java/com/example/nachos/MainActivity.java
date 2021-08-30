@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         viewPager = (ViewPager)findViewById(R.id.view);
         adapter = new Adapter(this);
-        viewPager.setAdapter(adapter);
+        //viewPager.setAdapter(adapter);
 
         tablayout = findViewById(R.id.tablayout);
         tablayout.addOnTabSelectedListener(onTabSelectedListener);

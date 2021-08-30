@@ -14,7 +14,11 @@
         <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/drawable/ic_profile.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/drawable/item_slider.xml" value="0.16574074074074074" />
         <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/drawable/keyword_back.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/layout/activity_category.xml" value="0.2" />
         <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/layout/activity_product.xml" value="0.2" />
+        <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/layout/activity_site.xml" value="0.128" />
+        <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/layout/site_listview.xml" value="0.1" />
         <entry key="..\:/Users/suris/AndroidStudioProjects/nachos/app/src/main/res/layout/slider.xml" value="0.1265625" />
       </map>
     </option>

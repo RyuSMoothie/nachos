@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SiteActivity">
+    tools:context=".ProductActivity">
 
 
     <ScrollView
@@ -15,7 +15,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="70dp"
         android:background="#ffffff"
-            >
+        >
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -28,7 +28,7 @@
                 android:id="@+id/text1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="  미닝아웃을 도와줄 사이트 알아보기"
+                android:text="  미닝아웃을 도와줄 제품 알아보기"
                 android:textColor="#000000"
                 android:textSize="10pt"
                 android:textStyle="bold"
@@ -150,53 +150,15 @@
                     tools:ignore="MissingConstraints" />
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/text3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="  한 번에 만나보는 #미닝아웃 #가치소비 "
-                android:textColor="#000000"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/group_hash2"
-                tools:ignore="MissingConstraints" />
-
-            <ListView
-                android:id="@+id/SiteList1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text3"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/text4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="  키워드로 만나보는 #미닝아웃 #가치소비  "
-                android:textColor="#000000"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/SiteList1"
-                tools:ignore="MissingConstraints" />
-
-
             <!-- 업사이클링 -->
             <LinearLayout
                 android:id="@+id/title_up"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="12dp"
                 android:orientation="vertical"
                 android:background="@drawable/back_upcycling"
-                app:layout_constraintTop_toBottomOf="@id/text4"
+                app:layout_constraintTop_toBottomOf="@id/group_hash2"
                 tools:ignore="MissingConstraints">
 
                 <TextView
@@ -223,15 +185,34 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/SiteList_up"
+            <LinearLayout
+                android:id="@+id/ProdList_up"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title_up"
-                tools:ignore="MissingConstraints" />
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
 
+                <ImageButton
+                    android:id="@+id/up_prod1"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/back_upcycling"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageButton
+                    android:id="@+id/up_prod2"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/back_upcycling"
+                    android:scaleType="centerCrop"
+                    />
+                
+            </LinearLayout>
 
             <!-- 비건 -->
             <LinearLayout
@@ -241,7 +222,7 @@
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:background="@drawable/back_vegan"
-                app:layout_constraintTop_toBottomOf="@id/SiteList_up"
+                app:layout_constraintTop_toBottomOf="@id/ProdList_up"
                 tools:ignore="MissingConstraints">
 
                 <TextView
@@ -268,14 +249,35 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/SiteList_ve"
+            <LinearLayout
+                android:id="@+id/ProdList_vegan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title_ve"
-                tools:ignore="MissingConstraints" />
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <ImageButton
+                    android:id="@+id/v_prod1"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="#00000000"
+                    android:src="@drawable/v_1"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageButton
+                    android:id="@+id/v_prod2"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/v_2"
+                    android:scaleType="centerCrop"
+                    />
+
+            </LinearLayout>
 
             <!-- 공정무역  -->
             <LinearLayout
@@ -285,7 +287,7 @@
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:background="@drawable/back_fair"
-                app:layout_constraintTop_toBottomOf="@id/SiteList_ve"
+                app:layout_constraintTop_toBottomOf="@id/ProdList_vegan"
                 tools:ignore="MissingConstraints">
 
                 <TextView
@@ -312,14 +314,36 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/SiteList_fair"
+            <LinearLayout
+                android:id="@+id/ProdList_fair"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title_fair"
-                tools:ignore="MissingConstraints" />
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <ImageButton
+                    android:id="@+id/ft_prod1"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/back_fair"
+                    android:src="@drawable/ft_1"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageButton
+                    android:id="@+id/ft_prod2"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/back_fair"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ft_2"
+                    android:scaleType="centerCrop"
+                    />
+
+            </LinearLayout>
 
             <!-- 기부 후원  -->
             <LinearLayout
@@ -329,7 +353,7 @@
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:background="@drawable/back_donation"
-                app:layout_constraintTop_toBottomOf="@id/SiteList_fair"
+                app:layout_constraintTop_toBottomOf="@id/ProdList_fair"
                 tools:ignore="MissingConstraints">
 
                 <TextView
@@ -356,14 +380,33 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/SiteList_do"
+            <LinearLayout
+                android:id="@+id/ProdList_do"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title_do"
-                tools:ignore="MissingConstraints" />
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <ImageButton
+                    android:id="@+id/do_prod1"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/back_donation"
+                    android:scaleType="centerInside"
+                    />
+
+                <ImageButton
+                    android:id="@+id/do_prod2"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/back_donation"
+                    android:scaleType="centerInside"
+                    />
+
+            </LinearLayout>
 
             <!-- 동물 복지   -->
             <LinearLayout
@@ -373,7 +416,7 @@
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:background="@drawable/back_animal"
-                app:layout_constraintTop_toBottomOf="@id/SiteList_do"
+                app:layout_constraintTop_toBottomOf="@id/ProdList_do"
                 tools:ignore="MissingConstraints">
 
                 <TextView
@@ -400,14 +443,33 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/SiteList_ani"
+            <LinearLayout
+                android:id="@+id/ProdList_ani"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title_ani"
-                tools:ignore="MissingConstraints" />
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <ImageButton
+                    android:id="@+id/ani_prod1"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/back_animal"
+                    android:scaleType="centerInside"
+                    />
+
+                <ImageButton
+                    android:id="@+id/ani_prod2"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:background="@drawable/back_animal"
+                    android:scaleType="centerInside"
+                    />
+
+            </LinearLayout>
 
             <!-- 플라스틱 프리 -->
             <LinearLayout
@@ -417,7 +479,7 @@
                 android:layout_marginTop="15dp"
                 android:orientation="vertical"
                 android:background="@drawable/back_plastic"
-                app:layout_constraintTop_toBottomOf="@id/SiteList_ani"
+                app:layout_constraintTop_toBottomOf="@id/ProdList_ani"
                 tools:ignore="MissingConstraints">
 
                 <TextView
@@ -444,51 +506,45 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <ListView
-                android:id="@+id/SiteList_pla"
+            <LinearLayout
+                android:id="@+id/ProdList_pla"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="8dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/title_pla"
-                tools:ignore="MissingConstraints" />
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/text17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="  키워드를 넘어 #미닝아웃 #가치소비 "
-                android:textColor="#000000"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/SiteList_pla"
-                tools:ignore="MissingConstraints" />
+                <ImageButton
+                    android:id="@+id/pf_prod1"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/pf_1"
+                    android:scaleType="centerInside"
+                    />
 
-            <ListView
-                android:id="@+id/SiteList2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="30dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text17"
-                tools:ignore="MissingConstraints" />
+                <ImageButton
+                    android:id="@+id/pf_prod2"
+                    android:layout_width="190dp"
+                    android:layout_height="190dp"
+                    android:src="@drawable/pf_2"
+                    android:scaleType="centerInside"
+                    />
 
+            </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
     <com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/bottomNavigationView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:itemBackground="@android:color/white"
-    app:labelVisibilityMode="labeled"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:menu="@menu/menu_bottomnavigationview"/>
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@android:color/white"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottomnavigationview"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
