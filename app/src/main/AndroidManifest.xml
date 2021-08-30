@@ -16,6 +16,10 @@
         <activity
             android:name=".AboutVeActivity"
             android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
             tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +32,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
-            tools:ignore="Instantiatable"></activity>
+            tools:ignore="Instantiatable" />
         <activity
             android:name=".FragementAdapter"
             tools:ignore="Instantiatable" />
