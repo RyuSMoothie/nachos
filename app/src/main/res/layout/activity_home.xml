@@ -8,9 +8,6 @@
 
 
     <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="70dp"
@@ -36,18 +33,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/text11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" 미닝아웃을 도와줄 사이트 알아보기"
-                android:textColor="#000000"
-                android:textSize="10pt"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/viewPager"
-                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/text21"
@@ -64,7 +49,7 @@
                 android:textSize="15dp"
                 android:textStyle="normal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text11"
+                app:layout_constraintTop_toBottomOf="@id/viewPager"
                 tools:ignore="MissingConstraints" />
 
             <LinearLayout
@@ -168,14 +153,127 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text=" 한 번에 만나보는 #미닝아웃 #가치소비 "
+                android:text=" 이번 주 주목할 #가치소비  "
                 android:textColor="#000000"
-                android:textSize="9pt"
+                android:textSize="11pt"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/group_hash22"
                 tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/goto_pl"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_pl"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text31"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/goto_ve"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_ve"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/goto_pl"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text=" 당신의 #미닝아웃  "
+                android:textColor="#000000"
+                android:textSize="11pt"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/goto_ve"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/text61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" 여러분들의 미닝아웃 키워드를 공유해 주세요.  "
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text51"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/search_box"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="  #내 미닝아웃 키워드는 "
+                android:padding="13dp"
+                android:textColor="#3E3E3E"
+                android:textSize="15dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text61"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/text81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="  우리의 #미닝아웃  "
+                android:textColor="#000000"
+                android:textSize="11pt"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text71"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/text91"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text=" 우리가 함께 만들어 가는 키워드  "
+                android:textColor="#000000"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text81"
+                tools:ignore="MissingConstraints" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler1"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:clipToPadding="false"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:scrollbars="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/text91"
+                tools:ignore="MissingConstraints" />
+
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
