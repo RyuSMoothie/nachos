@@ -34,7 +34,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
 
-            <TextView
+            <EditText
                 android:id="@+id/text21"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
 
             <Button
                 android:id="@+id/goto_ve"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="240dp"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
@@ -212,36 +212,61 @@
                 app:layout_constraintTop_toBottomOf="@id/text51"
                 tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:id="@+id/text71"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/search_box"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:hint="  #내 미닝아웃 키워드는 "
-                android:padding="13dp"
-                android:textColor="#3E3E3E"
-                android:textSize="15dp"
-                android:textStyle="normal"
-                app:layout_constraintStart_toStartOf="parent"
+                android:id="@+id/mykeyword"
+                android:textColor="@color/white"
+                android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/text61"
-                tools:ignore="MissingConstraints" />
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/text71"
+                    android:layout_width="930dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/search_box"
+                    android:hint="  #내 미닝아웃 키워드는 "
+                    android:padding="13dp"
+                    android:textColor="#3E3E3E"
+                    android:textSize="15dp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text61"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/insert_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:text="공유 ➜"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:background="@drawable/insert_box"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text71"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/text81"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="  우리의 #미닝아웃  "
+                android:text=" 우리의 #미닝아웃  "
                 android:textColor="#000000"
                 android:textSize="11pt"
                 android:textStyle="bold"
                 android:layout_marginLeft="20dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text71"
+                app:layout_constraintTop_toBottomOf="@id/mykeyword"
                 tools:ignore="MissingConstraints" />
             <TextView
                 android:id="@+id/text91"
