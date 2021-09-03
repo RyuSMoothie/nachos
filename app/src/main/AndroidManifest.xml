@@ -10,25 +10,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Nachos">
-
-        <activity android:name=".MainActivity"
-            android:exported ="true"
-            tools:ignore="Instantiatable">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.DEFAULT"/>
-            <category android:name="android.intent.category.HOME"/>
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
-
         <activity android:name=".SiteActivity"
-            android:exported ="false"
+            android:exported="true"
+            tools:ignore="Instantiatable"></activity>
+        <activity
+            android:name=".AboutVeActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
             tools:ignore="Instantiatable">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
-        <activity android:name=".FragementAdapter"
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".FragementAdapter"
             tools:ignore="Instantiatable" />
     </application>
 

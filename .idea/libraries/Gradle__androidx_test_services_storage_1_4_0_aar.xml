@@ -4,11 +4,17 @@
       <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/cab7427031340e655b498850dc34743e/storage-1.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/cab7427031340e655b498850dc34743e/storage-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/cab7427031340e655b498850dc34743e/storage-1.4.0/AndroidManifest.xml" />
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cab7427031340e655b498850dc34743e/storage-1.4.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2208ffa305d25d0368994237fe1bb212/storage-1.4.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36affd79c3e9f337ee0166062c8cf5fb/storage-1.4.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36affd79c3e9f337ee0166062c8cf5fb/storage-1.4.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/36affd79c3e9f337ee0166062c8cf5fb/storage-1.4.0/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cab7427031340e655b498850dc34743e/storage-1.4.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cab7427031340e655b498850dc34743e/storage-1.4.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/cab7427031340e655b498850dc34743e/storage-1.4.0/jars/classes.jar!/" />
+>>>>>>> 970781265f9385de70044b1bd6984bebf8732565
     </CLASSES>
     <JAVADOC />
     <SOURCES>

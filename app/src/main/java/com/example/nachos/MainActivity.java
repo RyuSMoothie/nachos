@@ -1,29 +1,33 @@
 package com.example.nachos;
 
-import androidx.appcompat.app.AppCompatActivity;
-import android.os.Bundle;
-import androidx.viewpager.widget.ViewPager;
-import com.google.android.material.tabs.TabLayout;
 import android.content.Context;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
+
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = "Main_Activity";
     private TabLayout tabLayout;
-    private ViewPager viewPager;
-    private FragementAdapter adapter;
     TabLayout tablayout;
     LinearLayout home_page, cate_page, prod_page, stor_page;
     Context context;
+
+    Adapter adapter;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        viewPager = (ViewPager)findViewById(R.id.view);
+        adapter = new Adapter(this);
+        //viewPager.setAdapter(adapter);
 
         tablayout = findViewById(R.id.tablayout);
         tablayout.addOnTabSelectedListener(onTabSelectedListener);

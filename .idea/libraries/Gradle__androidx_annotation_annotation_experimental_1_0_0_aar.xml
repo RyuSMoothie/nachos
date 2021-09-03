@@ -5,10 +5,15 @@
       <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/8b1826e082b884f9fc593d27a9580a45/annotation-experimental-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/8b1826e082b884f9fc593d27a9580a45/annotation-experimental-1.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b1826e082b884f9fc593d27a9580a45/annotation-experimental-1.0.0/res" />
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ca4ee02f6db6a6e078275f81cf0476ca/annotation-experimental-1.0.0/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7aae92c28b2be91110890bdeba79710f/annotation-experimental-1.0.0/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7aae92c28b2be91110890bdeba79710f/annotation-experimental-1.0.0/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/7aae92c28b2be91110890bdeba79710f/annotation-experimental-1.0.0/AndroidManifest.xml" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b1826e082b884f9fc593d27a9580a45/annotation-experimental-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8b1826e082b884f9fc593d27a9580a45/annotation-experimental-1.0.0/AndroidManifest.xml" />
+>>>>>>> 970781265f9385de70044b1bd6984bebf8732565
     </CLASSES>
     <JAVADOC />
     <SOURCES>
