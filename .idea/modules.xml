@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.nachos.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidStudioProjects.nachos.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/nachos.iml" filepath="$PROJECT_DIR$/.idea/modules/nachos.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/nachos.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/nachos.app.iml" />
     </modules>
