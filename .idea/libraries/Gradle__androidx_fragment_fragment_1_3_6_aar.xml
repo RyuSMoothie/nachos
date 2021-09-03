@@ -2,15 +2,25 @@
   <library name="Gradle: androidx.fragment:fragment:1.3.6@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/annotations.zip!/" />
+<<<<<<< HEAD
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c8ae8f8f594b90c7427f03ba22f4630/fragment-1.3.6/annotations.zip!/" />
+=======
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/annotations.zip!/" />
+>>>>>>> 970781265f9385de70044b1bd6984bebf8732565
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/res" />
       <root url="file://$USER_HOME$/.gradle/wrapper/dists/gradle-6.7.1-bin/bwlcbys1h7rz3272sye1xwiv6/gradle-6.7.1/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/AndroidManifest.xml" />
+<<<<<<< HEAD
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c8ae8f8f594b90c7427f03ba22f4630/fragment-1.3.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c8ae8f8f594b90c7427f03ba22f4630/fragment-1.3.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6c8ae8f8f594b90c7427f03ba22f4630/fragment-1.3.6/res" />
+=======
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/AndroidManifest.xml" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/380cac61cb2889001fece44433f66572/fragment-1.3.6/jars/classes.jar!/" />
+>>>>>>> 970781265f9385de70044b1bd6984bebf8732565
     </CLASSES>
     <JAVADOC />
     <SOURCES>
