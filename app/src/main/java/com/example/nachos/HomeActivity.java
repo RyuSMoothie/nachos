@@ -2,6 +2,7 @@ package com.example.nachos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import java.util.ArrayList;
@@ -37,6 +38,17 @@ public class HomeActivity extends AppCompatActivity {
         keyword = findViewById(R.id.text71);
         add_bt = findViewById(R.id.insert_key);
 
+        Button aboutve;
+        aboutve = findViewById(R.id.goto_ve);
+
+        // About 비건 페이지 이동
+        aboutve.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(HomeActivity.this, AboutVeActivity.class);
+                    startActivity(intent);
+            }
+        });
 
         float density = getResources().getDisplayMetrics().density;
         int margin = (int) (DP * density);
@@ -45,21 +57,12 @@ public class HomeActivity extends AppCompatActivity {
 
         viewPager.setAdapter(new ViewPagerAdapter(this, imageList));
 
-        ArrayList<String> list = new ArrayList<>();
- /*
-        for (int i=0; i<100; i++) {
-            list.add(String.format("come on %d", i)) ;
-        }
 
-
-        // 리사이클러뷰에 LinearLayoutManager 객체 지정.
-        RecyclerView recyclerView = findViewById(R.id.recycler1) ;
-        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)) ;
-
-        // 리사이클러뷰에 TestAdapter01 객체 지정.
-        TestAdapter01 adapter = new TestAdapter01(list) ;
-        recyclerView.setAdapter(adapter) ;*/
         ArrayList<String> itemList = new ArrayList<>();
+        init(itemList);
+        itemList.add(0," #친환경 ");
+        itemList.add(1," #제로웨이스트 ");
+        itemList.add(2," #플로깅 ");
 
         add_bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,24 +71,19 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
     private void init(ArrayList<String> itemList) {
-
-
 
         listview = findViewById(R.id.recycler1);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         listview.setLayoutManager(layoutManager);
 
         String word = keyword.getText().toString(); //입력한 문자 받아옴
+        if (word.length() > 0) {
+            itemList.add(" #" +word +" "); //아이템 리스트에 추가
+        }
 
-
-
-
-                itemList.add(" #" +word +" "); //아이템 리스트에 추가
 
         adapter = new MyAdapter(this, itemList, onClickItem);
         listview.setAdapter(adapter);
