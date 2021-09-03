@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager viewPager;
     private FragementAdapter adapter;
     TabLayout tablayout;
-    LinearLayout home_page, cate_page, prod_page,  stor_page;
+    LinearLayout home_page, cate_page, prod_page, stor_page;
     Context context;
 
     @Override
